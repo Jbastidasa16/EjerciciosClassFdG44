@@ -1,0 +1,18 @@
+"""Dada la tupla (5,1,2,3,5,9,1,2,8,10,4,4)
+contar cuantos numeros hay de 1, 2, 4 y 5 e imprimir por pantalla cuantas veces
+se repite cada numero; ordenar la tupla e imprimirla"""
+print(f"\nLa tupla dada es: \n")
+x = (5,1,2,3,5,9,1,2,8,10,4,4)
+print(x,"\n")
+a = x.count(1)
+b = x.count(2)
+c = x.count(4)
+d = x.count(5)
+z = list(x)
+z.sort()
+x = tuple(z)
+print(f"En la Tupla dada, el numero 1 se repite {a} veces")
+print(f"En la Tupla dada, el numero 2 se repite {b} veces")
+print(f"En la Tupla dada, el numero 4 se repite {c} veces")
+print(f"En la Tupla dada, el numero 5 se repite {d} veces")
+print(f"\nLa tupla ordenada es: \n{x}")
